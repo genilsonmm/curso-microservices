@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: transaction-service
+    data:
+      mongodb:
+          host: localhost
+          port: 27017
+          database: transaction_db
+server:
+    port: 8080

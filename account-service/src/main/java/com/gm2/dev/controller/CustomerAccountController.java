@@ -35,7 +35,7 @@ public class CustomerAccountController extends BaseController {
         try {
             return getResponseSuccess(service.findByAccountNumber(account), HttpStatus.OK);
         } catch (InvalidAccountException error){
-            return getResponseError(error.getMessage(), HttpStatus.NOT_FOUND);
+            return getResponseError(error.getMessage(), HttpStatus.OK);
         }catch (Exception error){
             return getResponseError(error.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
