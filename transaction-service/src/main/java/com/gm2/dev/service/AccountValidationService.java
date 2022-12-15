@@ -20,6 +20,8 @@ public class AccountValidationService {
     public boolean verifyAccount(String accountNumber){
         ResponseDto responseDto = accountRequest.getUserAccount(accountNumber);
 
+        System.out.println("ACCOUNT_SERVICE PORT: " + responseDto.getPort());
+
         if(Objects.isNull(responseDto.getData()))
             throw new InvalidUserAccountException(responseDto.getMessage());
 

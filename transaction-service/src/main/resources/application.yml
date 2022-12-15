@@ -8,3 +8,7 @@ spring:
           database: transaction_db
 server:
     port: 8080
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8765/eureka
