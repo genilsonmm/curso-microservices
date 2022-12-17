@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "717390f3-2c08-4ccc-ae59-196d879b74d4",
+		"name": "account-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1711369"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/customer-account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": \"47345678921\",\r\n    \"fullName\": \"Daniel da Silva\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/customer-account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"customer-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/customer-account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/customer-account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"customer-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/customer-account/12349",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/customer-account/12349",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"customer-account",
+						"12349"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

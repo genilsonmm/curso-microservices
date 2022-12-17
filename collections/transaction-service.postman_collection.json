@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "4da1be6b-b48f-4d1f-aa85-e71dc2dedb0c",
+		"name": "transaction-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1711369"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"1234\",\r\n    \"operation\": \"Deposito\",\r\n    \"value\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/transaction/1234",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/transaction/136645",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transaction",
+						"136645"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountFrom\": \"1234\",\r\n    \"accountTo\": \"136645\",\r\n    \"value\": 5\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transfer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/transfer/1234",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/transfer/1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

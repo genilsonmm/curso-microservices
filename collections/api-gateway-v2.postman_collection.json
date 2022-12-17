@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "cb0a547d-6254-4552-825a-a298e2be4aec",
+		"name": "api-gateway-v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1711369"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8761/customer-account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8761/customer-account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8761",
+					"path": [
+						"customer-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8761/customer-account/1234",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8761/customer-account/1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8761",
+					"path": [
+						"customer-account",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

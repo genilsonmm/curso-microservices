@@ -1,0 +1,22 @@
+spring:
+    application:
+        name: transaction-service
+    data:
+      mongodb:
+          host: localhost
+          port: 27017
+          database: transaction_db
+server:
+    port: 8080
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8765/eureka
+resilience4j:
+    retry:
+        instances:
+          default:
+              max-attempts: 4
+          account:
+              max-attempts: 5
+              wait-duration: 5s

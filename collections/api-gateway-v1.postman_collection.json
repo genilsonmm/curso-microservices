@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "255f9d50-d287-4716-a358-a5e8c9626a7f",
+		"name": "api-gateway-v1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1711369"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8761/account-service/customer-account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8761/account-service/customer-account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8761",
+					"path": [
+						"account-service",
+						"customer-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8761/account-service/customer-account/1234",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8761/account-service/customer-account/1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8761",
+					"path": [
+						"account-service",
+						"customer-account",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8761/account-service/customer-account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": \"88345678921\",\r\n    \"fullName\": \"Genilson Medeiros\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8761/account-service/customer-account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8761",
+					"path": [
+						"account-service",
+						"customer-account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8761/transaction-service/transaction/1234",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8761/transaction-service/transaction/1234",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8761",
+					"path": [
+						"transaction-service",
+						"transaction",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
